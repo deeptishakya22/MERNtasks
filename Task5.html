@@ -1,0 +1,127 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ethnus Mern Stack</title>
+        <style>
+            .container {
+                border: 1px solid black;
+                margin: auto;
+                width: 50%;
+                padding: 15px;
+                text-align: center;
+            }
+            .declaration_box {
+                border:1px solid black;
+                width: 67%;
+                margin: auto;
+            }
+            h1 {
+                text-align: center;
+                font-family: 'Times New Roman', Times, serif;
+                
+            }
+            h2 {
+                font-family: 'Times New Roman', Times, serif;
+                color: Blue; 
+                text-align: center;
+            }
+            td {
+                border:1px solid black;
+                font-family: 'Times New Roman', Times, serif;
+            }
+            li {
+                display: inline;
+                margin-right: 10px;
+            }
+            li:last-child {
+                margin-right: 0;
+            }
+            .separator {
+                margin: 0 5px;
+            }
+            th, td {
+                border:1px solid black;
+                font-family: 'Times New Roman', Times, serif;
+                padding: 5px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Task 5</h1>
+        <div class="container">
+            <h2>Registration Form</h2>
+            <form>
+                <table align="center">
+                    <tr>
+                        <th><label for="fname">First Name:</label></th>
+                        <td><input type="text" id="fname" name="fname" required></th>
+                    </tr>
+                    <tr>
+                        <th><label for="lname">Last Name:</label></th>
+                        <td><input type="text" id="lname" name="lname" required></td>
+                    </tr>
+                    <tr>
+                        <th><label for="email">Email:</label></th>
+                        <td><input type="email" id="email" name="email" required></td>
+                    </tr>
+                    <tr>
+                        <th><label>Gender:</label></th>
+                        <td><input type="radio" id="male" name="gender" value="male" required>
+                            <label for="male">Male</label>
+                            <input type="radio" id="female" name="gender" value="female" required>
+                            <label for="female">Female</label></td>
+                    </tr>
+                    <tr>
+                        <th><label for="phonenumber">Phone Number:</label></th>
+                        <td><input type="tel" id="phonenumber" name="phonenumber" required></td>
+                    </tr>
+                    <tr>
+                        <th><label for="address">Address:</label></th>
+                        <td><textarea id="address" name="address" required></textarea></td>
+                    </tr>
+                    <tr>
+                        <th><label for="state">State:</label></th>
+                        <td><input type="text" id="state" name="state" required></td>
+                    </tr>
+                    <tr>
+                        <th><label for="country">Country:</label></th>
+                        <td><select id="country" name="country" required>
+                            <option value="" disabled selected>Select a country</option>
+                            <option value="India">India</option>
+                            <option value="Japan">Japan</option>
+                            <option value="USA">USA</option>
+                            <option value="Canada">Canada</option>
+                            <option value="UK">UK</option>
+                            </select></td>
+                    </tr>
+                    <tr>
+                        <th><label>Languages Known:</label></th>
+                        <td><input type="checkbox" id="english" name="languages" value="English">
+                            <label for="english">English</label>
+
+                            <input type="checkbox" id="kannada" name="languages" value="Kannada">
+                            <label for="kannada">Kannada</label>
+
+                            <input type="checkbox" id="hindi" name="languages" value="Hindi">
+                            <label for="hindi">Hindi</label>
+
+                            <input type="checkbox" id="telugu" name="languages" value="Telugu">
+                            <label for="telugu">Telugu</label>
+                        </td>
+                    </tr>
+                </table>
+                <div class="declaration_box">
+                    <input type="checkbox" id="declaration" name="declaration" required>
+                    <label for="declaration">Hereby I declare all the given details are true.</label>
+                    <tr>
+                        <p>Log in to <a href="https://ethnus.com/" target="_blank">Ethnus</a> website.</p>
+                    </tr>
+                    
+                </div>
+                <br>
+                <input type="submit" value="Register">
+            </form>
+        </div>
+    </body>
+</html>

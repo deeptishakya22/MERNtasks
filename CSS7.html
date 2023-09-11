@@ -1,0 +1,73 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>MERN Tasks</title>
+        <style>
+            .container {
+                border: 1px solid black;
+                margin: auto;
+                width: 50%;
+                padding: 15px;
+                text-align: center;
+                background-color: rgba(90, 27, 58, 0.93);
+            }
+            form {
+                color: aliceblue;
+                text-align: left;
+            }
+            input{
+                margin-left: 100px;
+            }
+            h1 {
+                text-align: center;
+                font-family: 'Times New Roman', Times, serif;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Task 7</h1>
+        <div class="container">
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required><br><br>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br><br>
+
+                <label for="password">Password:</label>
+                <input type="text" id="password" name="password" required><br><br>
+
+                <label for="phonenumber">Phone Number:</label>
+                <input type="tel" id="phonenumber" name="phonenumber" required><br><br>
+                
+                <label>Gender:</label>
+                <input type="radio" id="male" name="gender" value="male" required>
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="female" required>
+                <label for="female">Female</label>
+                <input type="radio" id="other" name="other" value="other" required>
+                <label for="other">Other</label><br><br>
+
+                <label for="country">Country:</label></th>
+                <select id="country" name="country" required>
+                    <option value="" disabled selected>Select language</option>
+                    <option value="english">English</option>
+                    <option value="hindi">Hindi</option>
+                    <option value="bengali">Bengali</option>
+                    <option value="tamil">Tamil</option>
+                    <option value="telugu">Telugu</option>
+                </select><br><br>
+                
+                <label for="zip">Zip Code:</label>
+                <input type="text" id="zip" name="zip" required><br><br>
+
+                <label for="about">About:</label>
+                <textarea id="about" name="about" required>Write about yourself...</textarea><br>
+
+                <br>
+                <input type="submit" value="Register">
+            </form>
+        </div>
+    </body>
+</html>
